@@ -1,0 +1,1304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enchanting book crafting datapack for minecraft</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+    <style>
+        * {
+            font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+        body {
+            color: #606c71;
+        }
+        .container {
+            max-width: 960px;
+        }
+        .jumbotron {
+            background: #212529;
+            color: #FFF;
+        }
+        table tr td {
+            vertical-align: middle;
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        section {
+            margin: 30px 0;
+        }
+        .recipe-table tr {
+            background: #efefef;
+        }
+        .recipe-table img {
+            width: 32px;
+            height: 32px;
+        }
+    </style>
+</head>
+<body>
+<div class="jumbotron text-center">
+    <div class="container">
+        <h1 class="display-4">
+            Enchanter datapack
+        </h1>
+        <p class="lead">
+            Minecrat Datapack to "craft" enchanting books.
+        </p>
+        <a class="btn btn-primary " href="https://github.com/krike/enchanting-book-datapack" role="button">
+            View on github
+        </a>
+        <a class="btn btn-primary" href="https://github.com/krike/enchanting-book-datapack/releases/" role="button">
+            Download
+        </a>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <h2>Install</h2>
+            <ul>
+                <li>Download latest version</li>
+                <li>Place the zip file in the datapack folder of your world</li>
+                <li>Start crafting! :)</li>
+            </ul>
+        </div>
+        <div class="col-sm-6">
+            <h2>How to use?</h2>
+            <p>
+                Drop the ingredients on the ground together.
+                The game tick will detect and drop a book based on the ingredients dropped.
+                It must be the exact amount described in the list below.
+            </p>
+        </div>
+    </div>
+    <section>
+        <h2>Custom recipe</h2>
+        <p>
+            This datapack also include a custom recipe to create XP bottles.<br />
+            <img src="assets/xp_recipe.png" alt="XP bottle recipe" />
+        </p>
+    </section>
+    <hr />
+    <section>
+        <h2>Recipes</h2>
+        <form>
+            <div class="form-group">
+                <input class="form-control recipe-filter"
+                       name="recipe-filter"
+                       placeholder="Search recipe..."
+                />
+            </div>
+        </form>
+        <table cellpadding="5" cellspacing="0" border="0" class="table recipe-table">
+            <thead class="thead-dark">
+            <tr>
+                <th>Book</th>
+                <th>Ingredients</th>
+            </tr>
+            </thead>
+            <tbody>
+                                                <tr>
+                        <td class="book-name">Aqua Affinity</td>
+                        <td>
+                            <strong>16x</strong>
+                                                        <img src="assets/icons/lily_pad.png" title="lily_pad" alt="lily_pad" />,
+                            <strong>4x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                                                <tr>
+                        <td class="book-name">Blast protection I</td>
+                        <td>
+                            <strong>16x</strong>
+                                                        <img src="assets/icons/gunpowder.png" title="gunpowder" alt="gunpowder" />,
+                            <strong>4x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Blast protection II</td>
+                        <td>
+                            <strong>32x</strong>
+                                                        <img src="assets/icons/gunpowder.png" title="gunpowder" alt="gunpowder" />,
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Blast protection III</td>
+                        <td>
+                            <strong>48x</strong>
+                                                        <img src="assets/icons/gunpowder.png" title="gunpowder" alt="gunpowder" />,
+                            <strong>12x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Blast protection IV</td>
+                        <td>
+                            <strong>64x</strong>
+                                                        <img src="assets/icons/gunpowder.png" title="gunpowder" alt="gunpowder" />,
+                            <strong>24x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                                                <tr>
+                        <td class="book-name">Bane of Arthropods I</td>
+                        <td>
+                            <strong>16x</strong>
+                                                        <img src="assets/icons/spider_eye.png" title="spider_eye" alt="spider_eye" />,
+                            <strong>4x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Bane of Arthropods II</td>
+                        <td>
+                            <strong>32x</strong>
+                                                        <img src="assets/icons/spider_eye.png" title="spider_eye" alt="spider_eye" />,
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Bane of Arthropods III</td>
+                        <td>
+                            <strong>48x</strong>
+                                                        <img src="assets/icons/spider_eye.png" title="spider_eye" alt="spider_eye" />,
+                            <strong>12x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Bane of Arthropods IV</td>
+                        <td>
+                            <strong>64x</strong>
+                                                        <img src="assets/icons/spider_eye.png" title="spider_eye" alt="spider_eye" />,
+                            <strong>24x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                                                <tr>
+                        <td class="book-name">Channeling</td>
+                        <td>
+                            <strong>16x</strong>
+                                                        <img src="assets/icons/pufferfish.png" title="pufferfish" alt="pufferfish" />,
+                            <strong>4x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                                                <tr>
+                        <td class="book-name">Curse of Binding</td>
+                        <td>
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/sticky_piston.png" title="sticky_piston" alt="sticky_piston" />,
+                            <strong>4x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                                                <tr>
+                        <td class="book-name">Depth Strider I</td>
+                        <td>
+                            <strong>1x</strong>
+                                                        <img src="assets/icons/water_bucket.png" title="water_bucket" alt="water_bucket" />,
+                            <strong>4x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Depth Strider II</td>
+                        <td>
+                            <strong>2x</strong>
+                                                        <img src="assets/icons/water_bucket.png" title="water_bucket" alt="water_bucket" />,
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Depth Strider III</td>
+                        <td>
+                            <strong>3x</strong>
+                                                        <img src="assets/icons/water_bucket.png" title="water_bucket" alt="water_bucket" />,
+                            <strong>12x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                                                <tr>
+                        <td class="book-name">Efficiency I</td>
+                        <td>
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/redstone.png" title="redstone" alt="redstone" />,
+                            <strong>4x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Efficiency II</td>
+                        <td>
+                            <strong>16x</strong>
+                                                        <img src="assets/icons/redstone.png" title="redstone" alt="redstone" />,
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Efficiency III</td>
+                        <td>
+                            <strong>24x</strong>
+                                                        <img src="assets/icons/redstone.png" title="redstone" alt="redstone" />,
+                            <strong>12x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Efficiency IV</td>
+                        <td>
+                            <strong>32x</strong>
+                                                        <img src="assets/icons/redstone.png" title="redstone" alt="redstone" />,
+                            <strong>16x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Efficiency V</td>
+                        <td>
+                            <strong>48x</strong>
+                                                        <img src="assets/icons/redstone.png" title="redstone" alt="redstone" />,
+                            <strong>20x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                                                <tr>
+                        <td class="book-name">Curse of Vanishing</td>
+                        <td>
+                            <strong>4x</strong>
+                                                        <img src="assets/icons/lava_bucket.png" title="lava_bucket" alt="lava_bucket" />,
+                            <strong>4x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                                                <tr>
+                        <td class="book-name">Fire Aspect I</td>
+                        <td>
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/blaze_rod.png" title="blaze_rod" alt="blaze_rod" />,
+                            <strong>4x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Fire Aspect II</td>
+                        <td>
+                            <strong>16x</strong>
+                                                        <img src="assets/icons/blaze_rod.png" title="blaze_rod" alt="blaze_rod" />,
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                                                <tr>
+                        <td class="book-name">Feather Falling I</td>
+                        <td>
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/feather.png" title="feather" alt="feather" />,
+                            <strong>4x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Feather Falling II</td>
+                        <td>
+                            <strong>16x</strong>
+                                                        <img src="assets/icons/feather.png" title="feather" alt="feather" />,
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Feather Falling III</td>
+                        <td>
+                            <strong>24x</strong>
+                                                        <img src="assets/icons/feather.png" title="feather" alt="feather" />,
+                            <strong>12x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Feather Falling IV</td>
+                        <td>
+                            <strong>32x</strong>
+                                                        <img src="assets/icons/feather.png" title="feather" alt="feather" />,
+                            <strong>16x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                                                <tr>
+                        <td class="book-name">Fire Protection I</td>
+                        <td>
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/blaze_powder.png" title="blaze_powder" alt="blaze_powder" />,
+                            <strong>4x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Fire Protection II</td>
+                        <td>
+                            <strong>16x</strong>
+                                                        <img src="assets/icons/blaze_powder.png" title="blaze_powder" alt="blaze_powder" />,
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Fire Protection III</td>
+                        <td>
+                            <strong>24x</strong>
+                                                        <img src="assets/icons/blaze_powder.png" title="blaze_powder" alt="blaze_powder" />,
+                            <strong>12x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Fire Protection IV</td>
+                        <td>
+                            <strong>32x</strong>
+                                                        <img src="assets/icons/blaze_powder.png" title="blaze_powder" alt="blaze_powder" />,
+                            <strong>16x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                                                <tr>
+                        <td class="book-name">Flame I</td>
+                        <td>
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/netherrack.png" title="netherrack" alt="netherrack" />,
+                            <strong>4x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Flame II</td>
+                        <td>
+                            <strong>16x</strong>
+                                                        <img src="assets/icons/netherrack.png" title="netherrack" alt="netherrack" />,
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                                                <tr>
+                        <td class="book-name">Fortune I</td>
+                        <td>
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/emerald.png" title="emerald" alt="emerald" />,
+                            <strong>4x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Fortune II</td>
+                        <td>
+                            <strong>16x</strong>
+                                                        <img src="assets/icons/emerald.png" title="emerald" alt="emerald" />,
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Fortune III</td>
+                        <td>
+                            <strong>24x</strong>
+                                                        <img src="assets/icons/emerald.png" title="emerald" alt="emerald" />,
+                            <strong>12x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                                                <tr>
+                        <td class="book-name">Frost Walker I</td>
+                        <td>
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/frosted_ice.png" title="frosted_ice" alt="frosted_ice" />,
+                            <strong>4x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Frost Walker II</td>
+                        <td>
+                            <strong>16x</strong>
+                                                        <img src="assets/icons/frosted_ice.png" title="frosted_ice" alt="frosted_ice" />,
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                                                <tr>
+                        <td class="book-name">Impaling I</td>
+                        <td>
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/cooked_fish.png" title="cooked_fish" alt="cooked_fish" />,
+                            <strong>4x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Impaling II</td>
+                        <td>
+                            <strong>16x</strong>
+                                                        <img src="assets/icons/cooked_fish.png" title="cooked_fish" alt="cooked_fish" />,
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Impaling III</td>
+                        <td>
+                            <strong>24x</strong>
+                                                        <img src="assets/icons/cooked_fish.png" title="cooked_fish" alt="cooked_fish" />,
+                            <strong>12x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Impaling IV</td>
+                        <td>
+                            <strong>32x</strong>
+                                                        <img src="assets/icons/cooked_fish.png" title="cooked_fish" alt="cooked_fish" />,
+                            <strong>16x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Impaling V</td>
+                        <td>
+                            <strong>48x</strong>
+                                                        <img src="assets/icons/cooked_fish.png" title="cooked_fish" alt="cooked_fish" />,
+                            <strong>20x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                                                <tr>
+                        <td class="book-name">Knockback I</td>
+                        <td>
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/piston.png" title="piston" alt="piston" />,
+                            <strong>4x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Knockback II</td>
+                        <td>
+                            <strong>16x</strong>
+                                                        <img src="assets/icons/piston.png" title="piston" alt="piston" />,
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                                                <tr>
+                        <td class="book-name">Loyalty I</td>
+                        <td>
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/lead.png" title="lead" alt="lead" />,
+                            <strong>4x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Loyalty II</td>
+                        <td>
+                            <strong>16x</strong>
+                                                        <img src="assets/icons/lead.png" title="lead" alt="lead" />,
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Loyalty III</td>
+                        <td>
+                            <strong>24x</strong>
+                                                        <img src="assets/icons/lead.png" title="lead" alt="lead" />,
+                            <strong>12x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                                                <tr>
+                        <td class="book-name">Looting I</td>
+                        <td>
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/leather.png" title="leather" alt="leather" />,
+                            <strong>4x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Looting II</td>
+                        <td>
+                            <strong>16x</strong>
+                                                        <img src="assets/icons/leather.png" title="leather" alt="leather" />,
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Looting III</td>
+                        <td>
+                            <strong>24x</strong>
+                                                        <img src="assets/icons/leather.png" title="leather" alt="leather" />,
+                            <strong>12x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                                                <tr>
+                        <td class="book-name">Infinity</td>
+                        <td>
+                            <strong>16x</strong>
+                                                        <img src="assets/icons/ender_pearl.png" title="ender_pearl" alt="ender_pearl" />,
+                            <strong>4x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                                                <tr>
+                        <td class="book-name">Lure I</td>
+                        <td>
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/cod.png" title="cod" alt="cod" />,
+                            <strong>4x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Lure II</td>
+                        <td>
+                            <strong>16x</strong>
+                                                        <img src="assets/icons/cod.png" title="cod" alt="cod" />,
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Lure III</td>
+                        <td>
+                            <strong>24x</strong>
+                                                        <img src="assets/icons/cod.png" title="cod" alt="cod" />,
+                            <strong>12x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                                                <tr>
+                        <td class="book-name">Luck of the Sea I</td>
+                        <td>
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/gold_ingot.png" title="gold_ingot" alt="gold_ingot" />,
+                            <strong>4x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Luck of the Sea II</td>
+                        <td>
+                            <strong>16x</strong>
+                                                        <img src="assets/icons/gold_ingot.png" title="gold_ingot" alt="gold_ingot" />,
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Luck of the Sea III</td>
+                        <td>
+                            <strong>24x</strong>
+                                                        <img src="assets/icons/gold_ingot.png" title="gold_ingot" alt="gold_ingot" />,
+                            <strong>12x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                                                <tr>
+                        <td class="book-name">Multishot I</td>
+                        <td>
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/spectral_arrow.png" title="spectral_arrow" alt="spectral_arrow" />,
+                            <strong>32x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                                                <tr>
+                        <td class="book-name">Mending</td>
+                        <td>
+                            <strong>32x</strong>
+                                                        <img src="assets/icons/experience_bottle.png" title="experience_bottle" alt="experience_bottle" />,
+                            <strong>16x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                                                <tr>
+                        <td class="book-name">Piercing I</td>
+                        <td>
+                            <strong>2x</strong>
+                                                        <img src="assets/icons/target.png" title="target" alt="target" />,
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Piercing II</td>
+                        <td>
+                            <strong>4x</strong>
+                                                        <img src="assets/icons/target.png" title="target" alt="target" />,
+                            <strong>16x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Piercing II</td>
+                        <td>
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/target.png" title="target" alt="target" />,
+                            <strong>32x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Piercing IV</td>
+                        <td>
+                            <strong>16x</strong>
+                                                        <img src="assets/icons/target.png" title="target" alt="target" />,
+                            <strong>48x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                                                <tr>
+                        <td class="book-name">Power I</td>
+                        <td>
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/flint.png" title="flint" alt="flint" />,
+                            <strong>4x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Power II</td>
+                        <td>
+                            <strong>16x</strong>
+                                                        <img src="assets/icons/flint.png" title="flint" alt="flint" />,
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Power III</td>
+                        <td>
+                            <strong>24x</strong>
+                                                        <img src="assets/icons/flint.png" title="flint" alt="flint" />,
+                            <strong>12x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Power IV</td>
+                        <td>
+                            <strong>32x</strong>
+                                                        <img src="assets/icons/flint.png" title="flint" alt="flint" />,
+                            <strong>16x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Power V</td>
+                        <td>
+                            <strong>48x</strong>
+                                                        <img src="assets/icons/flint.png" title="flint" alt="flint" />,
+                            <strong>20x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                                                <tr>
+                        <td class="book-name">Projectile Protection I</td>
+                        <td>
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/arrow.png" title="arrow" alt="arrow" />,
+                            <strong>4x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Projectile Protection II</td>
+                        <td>
+                            <strong>16x</strong>
+                                                        <img src="assets/icons/arrow.png" title="arrow" alt="arrow" />,
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Projectile Protection III</td>
+                        <td>
+                            <strong>24x</strong>
+                                                        <img src="assets/icons/arrow.png" title="arrow" alt="arrow" />,
+                            <strong>12x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Projectile Protection IV</td>
+                        <td>
+                            <strong>32x</strong>
+                                                        <img src="assets/icons/arrow.png" title="arrow" alt="arrow" />,
+                            <strong>16x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                                                <tr>
+                        <td class="book-name">Protection I</td>
+                        <td>
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/iron_ingot.png" title="iron_ingot" alt="iron_ingot" />,
+                            <strong>4x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Protection II</td>
+                        <td>
+                            <strong>16x</strong>
+                                                        <img src="assets/icons/iron_ingot.png" title="iron_ingot" alt="iron_ingot" />,
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Protection III</td>
+                        <td>
+                            <strong>24x</strong>
+                                                        <img src="assets/icons/iron_ingot.png" title="iron_ingot" alt="iron_ingot" />,
+                            <strong>12x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Protection IV</td>
+                        <td>
+                            <strong>32x</strong>
+                                                        <img src="assets/icons/iron_ingot.png" title="iron_ingot" alt="iron_ingot" />,
+                            <strong>16x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                                                <tr>
+                        <td class="book-name">Quick charge I</td>
+                        <td>
+                            <strong>16x</strong>
+                                                        <img src="assets/icons/firework_star.png" title="firework_star" alt="firework_star" />,
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Quick charge II</td>
+                        <td>
+                            <strong>32x</strong>
+                                                        <img src="assets/icons/firework_star.png" title="firework_star" alt="firework_star" />,
+                            <strong>16x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Quick charge III</td>
+                        <td>
+                            <strong>48x</strong>
+                                                        <img src="assets/icons/firework_star.png" title="firework_star" alt="firework_star" />,
+                            <strong>32x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                                                <tr>
+                        <td class="book-name">Respiration I</td>
+                        <td>
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/glass_bottle.png" title="glass_bottle" alt="glass_bottle" />,
+                            <strong>4x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Respiration II</td>
+                        <td>
+                            <strong>16x</strong>
+                                                        <img src="assets/icons/glass_bottle.png" title="glass_bottle" alt="glass_bottle" />,
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Respiration III</td>
+                        <td>
+                            <strong>24x</strong>
+                                                        <img src="assets/icons/glass_bottle.png" title="glass_bottle" alt="glass_bottle" />,
+                            <strong>12x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                                                <tr>
+                        <td class="book-name">Riptide I</td>
+                        <td>
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/slime.png" title="slime" alt="slime" />,
+                            <strong>4x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Riptide II</td>
+                        <td>
+                            <strong>16x</strong>
+                                                        <img src="assets/icons/slime.png" title="slime" alt="slime" />,
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Riptide III</td>
+                        <td>
+                            <strong>24x</strong>
+                                                        <img src="assets/icons/slime.png" title="slime" alt="slime" />,
+                            <strong>12x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                                                <tr>
+                        <td class="book-name">Sharpness I</td>
+                        <td>
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/quartz.png" title="quartz" alt="quartz" />,
+                            <strong>4x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Sharpness II</td>
+                        <td>
+                            <strong>16x</strong>
+                                                        <img src="assets/icons/quartz.png" title="quartz" alt="quartz" />,
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Sharpness III</td>
+                        <td>
+                            <strong>24x</strong>
+                                                        <img src="assets/icons/quartz.png" title="quartz" alt="quartz" />,
+                            <strong>12x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Sharpness IV</td>
+                        <td>
+                            <strong>32x</strong>
+                                                        <img src="assets/icons/quartz.png" title="quartz" alt="quartz" />,
+                            <strong>16x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Sharpness V</td>
+                        <td>
+                            <strong>48x</strong>
+                                                        <img src="assets/icons/quartz.png" title="quartz" alt="quartz" />,
+                            <strong>20x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                                                <tr>
+                        <td class="book-name">Silk Touch</td>
+                        <td>
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/cobweb.png" title="cobweb" alt="cobweb" />,
+                            <strong>32x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                                                <tr>
+                        <td class="book-name">Sweeping Edge I</td>
+                        <td>
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/beef.png" title="beef" alt="beef" />,
+                            <strong>4x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Sweeping Edge II</td>
+                        <td>
+                            <strong>16x</strong>
+                                                        <img src="assets/icons/beef.png" title="beef" alt="beef" />,
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Sweeping Edge III</td>
+                        <td>
+                            <strong>24x</strong>
+                                                        <img src="assets/icons/beef.png" title="beef" alt="beef" />,
+                            <strong>12x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                                                <tr>
+                        <td class="book-name">Smite I</td>
+                        <td>
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/rotten_flesh.png" title="rotten_flesh" alt="rotten_flesh" />,
+                            <strong>4x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Smite II</td>
+                        <td>
+                            <strong>16x</strong>
+                                                        <img src="assets/icons/rotten_flesh.png" title="rotten_flesh" alt="rotten_flesh" />,
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Smite III</td>
+                        <td>
+                            <strong>24x</strong>
+                                                        <img src="assets/icons/rotten_flesh.png" title="rotten_flesh" alt="rotten_flesh" />,
+                            <strong>12x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Smite IV</td>
+                        <td>
+                            <strong>32x</strong>
+                                                        <img src="assets/icons/rotten_flesh.png" title="rotten_flesh" alt="rotten_flesh" />,
+                            <strong>16x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                                                <tr>
+                        <td class="book-name">Thorns I</td>
+                        <td>
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/cactus.png" title="cactus" alt="cactus" />,
+                            <strong>4x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Thorns II</td>
+                        <td>
+                            <strong>16x</strong>
+                                                        <img src="assets/icons/cactus.png" title="cactus" alt="cactus" />,
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Thorns III</td>
+                        <td>
+                            <strong>24x</strong>
+                                                        <img src="assets/icons/cactus.png" title="cactus" alt="cactus" />,
+                            <strong>12x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                                                <tr>
+                        <td class="book-name">Punch I</td>
+                        <td>
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/string.png" title="string" alt="string" />,
+                            <strong>4x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Punch II</td>
+                        <td>
+                            <strong>16x</strong>
+                                                        <img src="assets/icons/string.png" title="string" alt="string" />,
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                                                <tr>
+                        <td class="book-name">Unbreaking I</td>
+                        <td>
+                            <strong>4x</strong>
+                                                        <img src="assets/icons/obsidian.png" title="obsidian" alt="obsidian" />,
+                            <strong>4x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Unbreaking II</td>
+                        <td>
+                            <strong>16x</strong>
+                                                        <img src="assets/icons/obsidian.png" title="obsidian" alt="obsidian" />,
+                            <strong>8x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td class="book-name">Unbreaking III</td>
+                        <td>
+                            <strong>24x</strong>
+                                                        <img src="assets/icons/obsidian.png" title="obsidian" alt="obsidian" />,
+                            <strong>12x</strong>
+                                                        <img src="assets/icons/lapis_lazuli.png" title="lapis_lazuli" alt="lapis_lazuli" />,
+                            <strong>1x </strong>
+                            <img src="assets/icons/book_quill.png" style="width: 32px; height: 32px;" title="book_quill" alt="book_quill" />
+                        </td>
+                    </tr>
+                                        </tbody>
+        </table>
+    </section>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script>
+    $(function () {
+        var $body = $("body");
+        var recipeTableEl = $body.find(".recipe-table");
+        $(".recipe-filter").on("keyup", function (el) {
+            var $this = $(el.currentTarget);
+            var filterValue = $this.val();
+            recipeTableEl.find('tr').show();
+            $('tr td.book-name').each(function() {
+                var bookName = $(this).text().toLowerCase();
+                if (bookName.includes(filterValue)) {
+                    $(this).parent().show();
+                } else {
+                    $(this).parent().hide();
+                }
+            });
+        });
+    });
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-36044055-2"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-36044055-2');
+</script>
+
+</body>
+</html>
