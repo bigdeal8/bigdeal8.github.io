@@ -47,48 +47,34 @@
         <p class="lead">
             From Wikipedia, the free encyclopedia
         </p>
-        <a class="btn btn-primary " href="https://en.wikipedia.org/wiki/Cat_City" role="button">
-            cat city
+        <a class="btn btn-primary " data-toggle="modal" data-target="#exampleModal" role="button">
+            launch
         </a>
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+                                      </div>
         <a class="btn btn-primary" href="https://en.wikipedia.org/wiki/Main_Page" role="button">
             wikipedia
         </a>
     </div>
   </div>
   <div class="container">
-    <table cellpadding="5" cellspacing="0" border="0" class="table film-table">
-      <thead class="thead-dark">
-            <tr>
-                <th>Book</th>
-                <th>Ingredients</th>
-            </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="book-name">Aqua Affinity</td>
-                        <td>
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKmZ1cHkhloBN513Btdxpnv82xN-mbAz_h9w&usqp=CAU" alt="Fjords"/>
-                        </td>
-                    </tr>
-    <div class="modal" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p>Modal body text goes here.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary">Save changes</button>
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
     <div class="row">
         <div class="col-sm-6">
             <h2>Omschrijving</h2>
@@ -110,10 +96,5 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-  <script>
-    $('#myModal').on('shown.bs.modal', function () {
-      $('#myInput').trigger('focus')
-    })
-  </script>
   </body>
 </html>
