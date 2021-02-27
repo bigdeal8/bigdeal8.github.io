@@ -5,9 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
 	<title>Meubels</title>
     <style>
+	* {
+	  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+	
+    body {
+      color: #606c71;
+    }
+    
+	.container {
+      max-width: 960px;
+    }
+    
+	.jumbotron {
+      background: #212529;
+      color: #FFF;
+    }
+	
+    table tr td {
+      vertical-align: middle;
+    }
+        
+	h2 {
+      margin-bottom: 20px;
+    }
+	
+    section {
+      margin: 30px 0;
+    }
+	
     .exam-img:hover {
 	  cursor: pointer;
 	  transition: 0.2s;
@@ -29,11 +57,7 @@
       transition: 0.3s;
 	}
 
-	.content {
-	  margin: auto;
-      display: block;
-      height: 90%;
-	}
+
 
 	#caption {
       text-align: center;
@@ -128,7 +152,6 @@
 	  }
 	}
     </style>
-	
   </head>
   <body>
   <div class="jumbotron text-center">
@@ -140,19 +163,13 @@
             From Wikipedia, the free encyclopedia
         </p>
         <a class="btn btn-primary" href="https://en.wikipedia.org/wiki/Main_Page" role="button">
-            wiki
+            wikipedia
         </a>
 		<li class="exam_li"><img id="picture" src="https://www.w3schools.com/css/img_fjords.jpg" alt="Slika Testa" width="60" height="60" class="img-resposive exam-img"></li>
 		<div id="imgmodal">
-		  <div id="caption"><a id="download-link" download><span class="glyphicon glyphicon-download"></span><a id="download-link" download></a></div>
 		  <span id="close">&times;</span>
 		  <img class="content" id="img">
-<div id="imgmodal">
-<div id="caption"><a id="download-link" download><span class="glyphicon glyphicon-download"></span><a id="download-link" download></a></div>
-  <span id="close">&times;</span>
-  <img class="content" id="img">
-    </div>
-  </div>
+		</div>
   <div class="container">
     <div class="row">
         <div class="col-sm-6">
@@ -164,7 +181,7 @@
         <div class="col-sm-6">
             <h2>See also</h2>
             <ul>
-              <li>List of animated feature films</li>
+			  <li>List of animated feature films</li>
               <li>Vuk, another famous Hungarian animated film</li>
               <li>List of submissions to the 59th Academy Awards for Best Foreign Language Film</li>
               <li>List of Hungarian submissions for the Academy Award for Best Foreign Language Film</li>
@@ -175,7 +192,6 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script>
 	var modal = document.getElementById('imgmodal');
 	var img = document.getElementById('picture');
