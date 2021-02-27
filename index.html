@@ -5,114 +5,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
-    <title>Meubels</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+	<title>Meubels</title>
     <style>
-        .exam-img:hover {
-	cursor: pointer;
-	transition: 0.2s;
-	overflow: hidden;
-}
+    .exam-img:hover {
+	  cursor: pointer;
+	  transition: 0.2s;
+	  overflow: hidden;
+	}
 
-/* exam_img */
-#imgmodal {
-    display: none; 
-    position: fixed; 
-    z-index: 1; 
-    padding-top: 80px; 
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%; /* Full height */
-    background-color: rgb(0,0,0); /* Fallback color */
-    overflow: auto;
-    background-color: rgb(0,0,0); /* Black w/ opacity */
-    transition: 0.3s;
-}
+	#imgmodal {
+      display: none; 
+      position: fixed; 
+      z-index: 1; 
+      padding-top: 80px; 
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(0,0,0);
+      overflow: auto;
+      background-color: rgb(0,0,0);
+      transition: 0.3s;
+	}
 
-/* Modal Content (image) */
-.content {
-	margin: auto;
-    display: block;
-    height: 90%;
+	.content {
+	  margin: auto;
+      display: block;
+      height: 90%;
+	}
 
-}
+	#caption {
+      text-align: center;
+      color: #ccc;
+      position: absolute;
+      top: 15px;
+      left: 35px;
+      font-size: 40px;
+      margin-top: 0;
+	}
 
-/* Caption of Modal Image */
-#caption {
-    text-align: center;
-    color: #ccc;
-    position: absolute;
-    top: 15px;
-    left: 35px;
-    font-size: 40px;
-    margin-top: 0;
-}
+	.content, #caption {    
+      -webkit-animation-name: zoom;
+      -webkit-animation-duration: 0.6s;
+      animation-name: zoom;
+      animation-duration: 0.6s;
+	}
 
-/* Add Animation */
-.content, #caption {    
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
-    animation-name: zoom;
-    animation-duration: 0.6s;
-}
+	@-webkit-keyframes zoom {
+      from {-webkit-transform:scale(0)} 
+      to {-webkit-transform:scale(1)}
+	}
 
-@-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)} 
-    to {-webkit-transform:scale(1)}
-}
+	@keyframes zoom {
+      from {transform:scale(0)} 
+      to {transform:scale(1)}
+	}
 
-@keyframes zoom {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
-}
+	#close {
+      position: absolute;
+      top: 15px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 40px;
+      font-weight: 100;
+      transition: 0.3s;
+	}
 
-/* The Close Button */
-#close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: 100;
-    transition: 0.3s;
-}
+	#close:hover,
+	#close:focus {
+      color: #989898;
+      text-decoration: none;
+      cursor: pointer;
+	}
+	
+	#download-link{
+	  font-size: 25px;
+	  color: #f1f1f1;
+	  font-weight: normal;
+	  text-decoration: none;
+	  transition: 0.2s;
+	  padding: 10px;
+	}
+	
+	#download-link:hover {
+	  color: #989898;
+	}
 
-#close:hover,
-#close:focus {
-    color: #989898;
-    text-decoration: none;
-    cursor: pointer;
-}
-#download-link{
-	font-size: 25px;
-	color: #f1f1f1;
-	font-weight: normal;
-	text-decoration: none;
-	transition: 0.2s;
-	padding: 10px;
-}
-#download-link:hover {
-	color: #989898;
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 768px){
-    .content {
+	@media only screen and (max-width: 768px){
+      .content {
     	width: 100%;
-    	max-height: 90%;
     	height: auto;
-    }
-    #close {
-    top: 2px;
-    font-size: 40px;
-    }
-    #imgmodal {
-    	padding-top: 50px;
-    }
-    #caption {
-    	top: -1px;
-    }
-}
+		position: relative;
+		top: calc(50% - 25px);
+		top: -moz-calc(50% - 25px);
+		top: -webkit-calc(50% - 25px);
+		transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+		-moz-transform: translateY(-50%);
+	  }
+
+      #close {
+        top: 2px;
+        font-size: 40px;
+      }
+	
+      #imgmodal {
+    	  padding-top: 50px;
+      }
+      #caption {
+    	  top: -1px;
+      }
+	
+	  @-webkit-keyframes zoom {
+	    from {-webkit-transform: scale(0) translateY(-50%);}
+	    to {-webkit-transform: scale(1) translateY(-50%)}
+	  }
+	
+	  @keyframes zoom {
+	    from {transform: scale(0) translateY(-50%);}
+	    to {transform: scale(1) translateY(-50%);}
+	  }
+	}
     </style>
 	
   </head>
@@ -129,7 +143,10 @@
             wikipedia
         </a>
 		<li class="exam_li"><img id="picture" src="https://www.w3schools.com/css/img_fjords.jpg" alt="Slika Testa" width="60" height="60" class="img-resposive exam-img"></li>
-
+		<div id="imgmodal">
+		  <div id="caption"><a id="download-link" download><span class="glyphicon glyphicon-download"></span><a id="download-link" download></a></div>
+		  <span id="close">&times;</span>
+		  <img class="content" id="img">
 <div id="imgmodal">
 <div id="caption"><a id="download-link" download><span class="glyphicon glyphicon-download"></span><a id="download-link" download></a></div>
   <span id="close">&times;</span>
@@ -159,20 +176,21 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script>
 	var modal = document.getElementById('imgmodal');
-var img = document.getElementById('picture');
-var modalImg = document.getElementById("img");
-var download = document.getElementById('download-link');
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    download.href = this.src;
-}
-var span = document.getElementById("close");
-span.onclick = function() { 
-    modal.style.display = "none";
-}
+	var img = document.getElementById('picture');
+	var modalImg = document.getElementById("img");
+	var download = document.getElementById('download-link');
+	img.onclick = function(){
+		modal.style.display = "block";
+		modalImg.src = this.src;
+		download.href = this.src;
+	}
+	var span = document.getElementById("close");
+	span.onclick = function() { 
+		modal.style.display = "none";
+	}
   </script>
   </body>
 </html>
