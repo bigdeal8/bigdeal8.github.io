@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
 	<title>Meubels</title>
     <style>
 	* {
@@ -24,9 +26,23 @@
       color: #FFF;
     }
 	
-    table tr td {
-      vertical-align: middle;
-    }
+	table, tr, th, td {
+	  border: 1px solid #000;
+	}
+	
+
+	th {
+	  padding: 1ex;
+	  background: #ccc;
+	}
+	
+	td {
+	  padding: 1ex;
+	}
+	
+	.divide td {
+	  border-top: 3px solid;
+	}
         
 	h2 {
       margin-bottom: 20px;
@@ -36,13 +52,14 @@
       margin: 30px 0;
     }
 	
-    .exam-img:hover {
+	
+	.exam-img:hover {
 	  cursor: pointer;
 	  transition: 0.2s;
 	  overflow: hidden;
 	}
-
-	#imgmodal {
+	
+	#imgmodal{
       display: none; 
       position: fixed; 
       z-index: 1; 
@@ -57,31 +74,16 @@
       transition: 0.3s;
 	}
 	
-	/*
 	.content {
 	  margin: auto;
       display: block;
-      height: 90%;
-	}
-	*/
-
-	#caption {
-      text-align: center;
-      color: #ccc;
-      position: absolute;
-      top: 15px;
-      left: 35px;
-      font-size: 40px;
-      margin-top: 0;
-	}
-
-	.content, #caption {    
+      height: 90%; 
       -webkit-animation-name: zoom;
       -webkit-animation-duration: 0.6s;
       animation-name: zoom;
       animation-duration: 0.6s;
 	}
-
+	
 	@-webkit-keyframes zoom {
       from {-webkit-transform:scale(0)} 
       to {-webkit-transform:scale(1)}
@@ -91,7 +93,7 @@
       from {transform:scale(0)} 
       to {transform:scale(1)}
 	}
-
+	
 	#close {
       position: absolute;
       top: 15px;
@@ -107,19 +109,6 @@
       color: #989898;
       text-decoration: none;
       cursor: pointer;
-	}
-	
-	#download-link{
-	  font-size: 25px;
-	  color: #f1f1f1;
-	  font-weight: normal;
-	  text-decoration: none;
-	  transition: 0.2s;
-	  padding: 10px;
-	}
-	
-	#download-link:hover {
-	  color: #989898;
 	}
 
 	@media only screen and (max-width: 768px){
@@ -142,9 +131,6 @@
 	
       #imgmodal {
     	  padding-top: 50px;
-      }
-      #caption {
-    	  top: -1px;
       }
 	
 	  @-webkit-keyframes zoom {
@@ -171,11 +157,6 @@
         <a class="btn btn-primary" href="https://en.wikipedia.org/wiki/Main_Page" role="button">
             wikipedia
         </a>
-		<li class="exam_li"><img id="picture" src="https://www.w3schools.com/css/img_fjords.jpg" alt="Slika Testa" width="60" height="60" class="img-resposive exam-img"></li>
-		<div id="imgmodal">
-		  <span id="close">&times;</span>
-		  <img class="content" id="img">
-		</div>
 	</div>
   </div>
   <div class="container">
@@ -195,25 +176,57 @@
               <li>List of Hungarian submissions for the Academy Award for Best Foreign Language Film</li>
             </ul>
         </div>
-    </div>
+	</div>
   </div>
+  <section>
+	<table cellpadding="5" cellspacing="0" border="0" class="table">
+		<thead class="thead-dark">
+		<tr>
+			<th scope="col" style="width: 30%"></th>
+			<th scope="col" style="width: 50%"></th>
+			<th scope="col" style="width: 20%"></th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>Complete set: tweepersoonsbed boxspring - matrassen - topper<br><br>Breedte = 180 cm<br>Lengte = 200 cm<br>Tweepersoons<br>€ 200</td>
+			<td>Tweepersoonsbed-boxspring van 1,80 op 2 meter in lichtgrijs geweven stof met 2 matrassen en een topper. Zowel de matrassen als het bedframe zijn in zeer degelijke staat. Complete set meteen beschikbaar.</td>
+			<td><div class="imagewrap">
+				<img src="https://www.w3schools.com/css/img_fjords.jpg" width="60" height="60" class='exam-img'>
+				<img src="https://dailynewshungary.com/wp-content/uploads/2016/11/cat-city.jpg" width="60" height="60" class='exam-img'>
+				<div id="imgmodal" class="modal">
+					<span id="close" >&times;</span>
+					<img class="content" id="img">
+				</div>
+			</div></td>
+		</tr>
+		</tbody>
+	</table>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script>
 	var modal = document.getElementById('imgmodal');
-	var img = document.getElementById('picture');
 	var modalImg = document.getElementById("img");
-	var download = document.getElementById('download-link');
-	img.onclick = function(){
-		modal.style.display = "block";
-		modalImg.src = this.src;
-		download.href = this.src;
+	showImageInModal = function(e) {
+	  modal.style.display = "block";
+	  modalImg.src = this.src;
 	}
+
+	var images = document.querySelectorAll("div.imagewrap > img");
+	Array.prototype.forEach.call(images, function(element){
+	  element.addEventListener("click", showImageInModal, true);
+	});
+	
 	var span = document.getElementById("close");
-	span.onclick = function() { 
-		modal.style.display = "none";
-	}
+	span.addEventListener("click", function(e) {
+	  modal.style.display = "none";
+	}, true);
   </script>
   </body>
 </html>
